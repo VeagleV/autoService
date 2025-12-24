@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import CarList from "../components/CarList.vue";
 import HomePage from "../components/HomePage.vue";
+import UserRequests from "../components/UserRequests.vue";
 
 const routes = [
   {
@@ -13,7 +14,11 @@ const routes = [
     name: "HomePage",
     component: HomePage,
   },
-  // другие маршруты
+  {
+    path: "/requests",
+    name: "UserRequests",
+    component: UserRequests,
+  },
 ];
 
 const router = createRouter({
