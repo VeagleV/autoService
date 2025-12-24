@@ -62,7 +62,10 @@
         <div class="request-header">
           <h3 class="request-title">{{ request.title }}</h3>
           <span
-            :class="['status-badge', `status-${request.status.toLowerCase()}`]"
+            :class="[
+              'status-badge',
+              `status-${request.status ? request.status.toLowerCase() : 'new'}`,
+            ]"
           >
             {{ getStatusLabel(request.status) }}
           </span>
@@ -225,7 +228,11 @@
             <span
               :class="[
                 'status-badge',
-                `status-${viewingRequest.status.toLowerCase()}`,
+                `status-${
+                  viewingRequest.status
+                    ? viewingRequest.status.toLowerCase()
+                    : 'new'
+                }`,
               ]"
             >
               {{ getStatusLabel(viewingRequest.status) }}
