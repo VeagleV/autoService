@@ -417,7 +417,7 @@ function getStatusLabel(status) {
     COMPLETED: "Выполнен",
     REJECTED: "Отклонен",
   };
-  return labels[status] || status;
+  return labels[status] || labels.NEW || "Неизвестно";
 }
 
 function formatDate(dateString) {
