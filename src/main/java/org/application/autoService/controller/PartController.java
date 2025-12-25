@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/parts")
 @Validated
+@CrossOrigin
 public class PartController {
 
     private final PartService partService;

@@ -19,7 +19,7 @@ export default {
     };
   },
   created() {
-    carService.getAll().then((response) => {
+    carService.getAllCars().then((response) => {
       this.cars = response.data;
     });
   },

@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/orders")
 @Validated
+@CrossOrigin
 public class OrderController {
 
     private final OrderService orderService;

@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/clients")
 @Validated
+@CrossOrigin
 public class ClientController {
 
     private final ClientService clientService;
