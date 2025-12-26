@@ -13,14 +13,6 @@
             <span class="nav-icon">🏠</span>
             Главная
           </router-link>
-          <router-link to="/cars" class="nav-link">
-            <span class="nav-icon">🚙</span>
-            Автомобили
-          </router-link>
-          <router-link to="/requests" class="nav-link">
-            <span class="nav-icon">📝</span>
-            Запросы
-          </router-link>
         </div>
       </div>
     </nav>
