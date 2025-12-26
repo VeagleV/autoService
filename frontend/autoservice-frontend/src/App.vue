@@ -13,6 +13,10 @@
             <span class="nav-icon">🏠</span>
             Главная
           </router-link>
+          <router-link to="/database-queries" class="nav-link">
+            <span class="nav-icon">🔍</span>
+            Запросы к БД
+          </router-link>
         </div>
       </div>
     </nav>
