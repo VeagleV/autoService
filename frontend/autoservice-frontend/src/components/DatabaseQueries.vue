@@ -83,9 +83,7 @@
               </tbody>
             </table>
           </div>
-          <div v-else class="empty-results">
-            📭 Клиенты не найдены
-          </div>
+          <div v-else class="empty-results">📭 Клиенты не найдены</div>
         </div>
       </div>
 
@@ -447,9 +445,7 @@ async function executeQuery1() {
   query1.sql = `SELECT * FROM client WHERE email LIKE '%${query1.emailPattern}%'`;
 
   try {
-    const response = await queryService.findClientsByEmail(
-      query1.emailPattern
-    );
+    const response = await queryService.findClientsByEmail(query1.emailPattern);
     query1.results = response.data;
   } catch (err) {
     query1.error =
@@ -837,7 +833,11 @@ function getPaymentStatus(status) {
 }
 
 .stat-card {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-dark)
+  );
   color: white;
   padding: 1.5rem;
   border-radius: var(--radius-xl);

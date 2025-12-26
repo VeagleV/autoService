@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Frontend ###
+frontend/autoservice-frontend/node_modules/
+frontend/autoservice-frontend/dist/
+frontend/autoservice-frontend/.DS_Store
