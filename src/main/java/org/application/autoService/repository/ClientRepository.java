@@ -17,6 +17,6 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
     /**
      * Поиск клиентов по части email
      */
-    @Query("SELECT c FROM Client c WHERE c.email LIKE %:emailPattern%")
+    @Query("SELECT c FROM Client c WHERE c.email LIKE CONCAT('%', :emailPattern, '%')")
     List<Client> findByEmailContaining(@Param("emailPattern") String emailPattern);
 }
